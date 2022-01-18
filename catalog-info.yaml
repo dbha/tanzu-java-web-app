@@ -12,7 +12,7 @@ metadata:
   annotations:
     'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=tanzu-java-web-app'
   links:
-    - url: http://hello.demo.apps.tap.lab.pksdemo.net
+    - url: http://tanzu-java-web-app.demo.apps.tap.lab.pksdemo.net
       title: Website Address
 
 spec:
