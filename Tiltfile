@@ -16,5 +16,5 @@ custom_build('ghcr.io/dbha/tap/supply-chain/tanzu-java-web-app-demo',
 )
 
 allow_k8s_contexts('tap-private-cluster-admin@tap-private-cluster')
-tanzu_k8s_yaml('tanzu-java-web-app-demo', 'ghcr.io/dbha/tap/supply-chain/tanzu-java-web-app-demo', './config/workload.yaml')
+tanzu_k8s_yaml('tanzu-java-web-app', 'ghcr.io/dbha/tap/supply-chain/tanzu-java-web-app-demo', './config/workload.yaml')
 
