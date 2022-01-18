@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: my-tanzu-java-web-app
-  description: Tanzu Java Web App local
+  name: tanzu-java-web-app
+  description: Tanzu Java Web App
   tags:
     - app-accelerator
     - java
@@ -10,7 +10,10 @@ metadata:
     - web
     - tanzu
   annotations:
-    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=my-tanzu-java-web-app'
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=tanzu-java-web-app'
+  links:
+    - url: http://hello.demo.apps.tap.lab.pksdemo.net
+      title: Website Address
 spec:
   type: service
   lifecycle: experimental
