@@ -13,6 +13,5 @@ metadata:
     'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=dha-tanzu-java-web-app'
 spec:
   type: service
-  lifecycle: alpha
+  lifecycle: experimental
   owner: default-team
-  system: backstage
