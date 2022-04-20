@@ -11,6 +11,8 @@ metadata:
     - tanzu
   annotations:
     'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=tanzu-java-web-app'
-  links:
-    - url: https://dha-tanzu-java-web-app-demo.tap.lab.pksdemo.net
-      title: Website Address
+spec:
+  type: service
+  lifecycle: alpha
+  owner: default-team
+  system: backstage
