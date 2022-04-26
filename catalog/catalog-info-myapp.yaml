@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: myapps
-  description: MyApps Demo
+  name: my-nginx
+  description: Nginx Demo
   tags:
     - app-accelerator
     - java
@@ -12,7 +12,6 @@ metadata:
     - pre-built
   annotations:
     'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=my-nginx'
-    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=dha-tanzu-java-web-app'
 spec:
   type: service
   lifecycle: experimental
