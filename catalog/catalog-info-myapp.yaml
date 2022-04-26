@@ -11,8 +11,7 @@ metadata:
     - tanzu
     - pre-built
   annotations:
-    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=my-nginx'
-    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=dha-tanzu-java-web-app'
+    'backstage.io/kubernetes-label-selector': {"app.kubernetes.io/part-of=my-nginx", "app.kubernetes.io/part-of=dha-tanzu-java-web-app"}
 spec:
   type: service
   lifecycle: experimental
