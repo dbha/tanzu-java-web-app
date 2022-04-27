@@ -1,0 +1,22 @@
+apiVersion: carto.run/v1alpha1
+kind: Deliverable
+metadata:
+  creationTimestamp: "2022-04-27T02:28:33Z"
+  generation: 1
+  labels:
+    app.kubernetes.io/component: deliverable
+    app.kubernetes.io/part-of: dha-tanzu-java-web-app
+    app.tanzu.vmware.com/deliverable-type: web
+    apps.tanzu.vmware.com/has-tests: "true"
+    apps.tanzu.vmware.com/workload-type: web
+    carto.run/cluster-template-name: deliverable-template
+    carto.run/resource-name: deliverable
+    carto.run/supply-chain-name: source-test-scan-to-url
+    carto.run/template-kind: ClusterTemplate
+    carto.run/workload-name: dha-tanzu-java-web-app
+    carto.run/workload-namespace: demo
+  name: dha-tanzu-java-web-app
+  namespace: demo
+spec:
+  source:
+    image: ghcr.io/dbha/supply-chain/dha-tanzu-java-web-app-demo-bundle:2b97a8f3-0b57-4355-b871-9a749d8ce17e
