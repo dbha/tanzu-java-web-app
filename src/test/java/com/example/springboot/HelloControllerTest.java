@@ -21,11 +21,11 @@ class HelloControllerTest {
 
     @Test
     void index() throws Exception {
-        assertEquals("Spring Boot For Tanzu TAP Test2", controller.index());
+        assertEquals("Spring Boot For Tanzu TAP GITOPS", controller.index());
 
         mockMvc
             .perform(get("/"))
             .andExpect(status().isOk())
-            .andExpect(content().string("Spring Boot For Tanzu TAP Test2"));
+            .andExpect(content().string("Spring Boot For Tanzu TAP GITOPS"));
     }
 }
